@@ -1,0 +1,39 @@
+***
+
+**data_cleaning.Rmd**
+
+```markdown
+---
+title: "Data Cleaning Script Documentation"
+author: "Amanpreet Kaur Josan"
+output: html_document
+---
+
+> **AI Assistance Declaration:** I used Gemini for formatting suggestions and generating code block examples for this document. Prompts used: "Here's my R script description. Suggest Markdown formatting...", "Add syntax highlighting and improve section organization". I verified outputs using Posit Cloud to preview the document. All final calculations are done by myself. I am responsible for the accuracy and originality of this work.[cite: 2, 3]
+
+# Purpose
+The `data_cleaning.R` script is responsible for preparing the raw synthetic sales dataset for analysis. It handles missing values, standardizes date formats, and filters out invalid transaction records.[cite: 3]
+
+## Inputs
+* **File:** `data/raw_synthetic_sales.csv`
+* **Format:** Comma-Separated Values (CSV)
+* **Description:** Raw transaction data containing unverified entries and inconsistent formatting.[cite: 3]
+
+## Outputs
+* **File:** `data/clean_synthetic_sales.csv`
+* **Format:** Comma-Separated Values (CSV)
+* **Description:** A sanitized dataset ready for use in the main analysis.[cite: 3]
+
+## Example Code
+Below is a snippet demonstrating how the script handles missing values using `dplyr`:
+
+```r
+library(dplyr)
+
+# Load raw synthetic data
+raw_data <- read.csv("data/raw_synthetic_sales.csv")
+
+# Clean data by removing rows with missing Sales_Amount
+clean_data <- raw_data %>%
+  filter(!is.na(Sales_Amount)) %>%
+  mutate(Date = as.Date(Date, format="%Y-%m-%d"))

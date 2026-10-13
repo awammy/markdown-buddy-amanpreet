@@ -1,0 +1,17 @@
+***
+
+**Reflection.md**
+
+```markdown
+> **AI Assistance Declaration:** I used Gemini to help structure and draft my reflection thoughts based on the assignment criteria. Prompts used: "Help me draft responses to the reflection questions on AI workflows." I verified outputs by reviewing them against my actual assignment workflow. All final calculations are done by myself. I am responsible for the accuracy and originality of this work.[cite: 2]
+
+# Assignment 1: Reflection
+
+**1. What were the strengths and weaknesses of using AI-assisted documentation workflows?**[cite: 1]
+The primary strength of using AI was the speed at which it generated clean, well-formatted Markdown structure. It instantly provided a professional layout with correct syntax for headers, code blocks, and bullet points. A significant weakness, however, was that the AI sometimes generated generic content that lacked specific context, requiring me to manually edit and refine the outputs to ensure total accuracy.
+
+**2. How did iterative prompting improve your documentation quality?**[cite: 1]
+Iterative prompting was essential for refining the output. My initial seed prompts generated basic structures, but follow-up refinement prompts (e.g., asking to add syntax highlighting or specific sections like "Inputs" and "Outputs") transformed the draft into a professional document. It reinforced that AI functions best as a collaborative design assistant rather than a one-shot answer generator.[cite: 2]
+
+**3. How did you apply ethical practices and validate the AI outputs?**[cite: 1]
+I applied ethical practices by strictly using synthetic data, ensuring no real or personal information was shared with the AI tool. Furthermore, I validated all outputs by independently cross-checking the AI's Markdown syntax using Posit Cloud's preview feature and GitHub's interface to guarantee all elements rendered correctly before final submission.[cite: 2, 3]
